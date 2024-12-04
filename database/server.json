@@ -1,0 +1,176 @@
+{
+  "api": [
+    {
+      "id": 15,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 14,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 13,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 12,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 301,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "Collection Not Found | invaild Collection name",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 11,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 301,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "AppToken Invalid | Not Found Application",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 10,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 301,
+      "target": "http://localhost:3647/api/db",
+      "message": "AppToken Invalid | Not Found Application",
+      "user": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 9,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 401,
+      "target": "http://localhost:3647/api/db",
+      "message": "User Not Found | Unauthzarition",
+      "user": "Unauth"
+    },
+    {
+      "id": 8,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 401,
+      "target": "http://localhost:3647/api/db",
+      "message": "User Not Found | Unauthzarition",
+      "user": "Unauth"
+    },
+    {
+      "id": 7,
+      "origin": "Testing",
+      "method": "GET",
+      "status": 401,
+      "target": "http://localhost:3647/api/db",
+      "message": "User Not Found | Unauthzarition",
+      "user": "Unauth"
+    },
+    {
+      "id": 6,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 5,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 4,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 301,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "Collection Not Found | invaild Collection name",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 3,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 301,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "Collection Not Found | invaild Collection name",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 2,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    },
+    {
+      "id": 1,
+      "origin": "Testing",
+      "method": "PATCH",
+      "status": 200,
+      "target": "http://localhost:3647/api/db/findone",
+      "message": "OK",
+      "client": {
+        "name": "sanskar",
+        "token": "1234"
+      }
+    }
+  ],
+  "user": []
+}

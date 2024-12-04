@@ -1,0 +1,184 @@
+{
+  "applications": [
+    {
+      "id": 1732644724264,
+      "name": "testing-2",
+      "client": {
+        "name": "sanskar"
+      },
+      "token": 1732644710505,
+      "status": "active",
+      "createdAt": "2024-11-26T18:12:04.264Z",
+      "updatedAt": "2024-11-26T18:12:04.264Z"
+    },
+    {
+      "id": 1732423805554,
+      "name": "Testing",
+      "token": "no-token",
+      "info": "testing",
+      "client": {
+        "name": "sanskar",
+        "token": "12345"
+      },
+      "createdAt": "2024-11-24T04:50:05.554Z",
+      "updatedAt": "2024-11-24T04:58:33.179Z",
+      "status": "active"
+    }
+  ],
+  "collections": [
+    {
+      "id": 1733291940833,
+      "name": "User Informatuion",
+      "info": "information of this collection",
+      "appToken": "1732644710505",
+      "schema": [
+        {
+          "name": "Username",
+          "type": "text",
+          "value": "username"
+        },
+        {
+          "name": "Password",
+          "type": "text",
+          "required": false,
+          "value": "Password"
+        }
+      ],
+      "slug": "user-informatuio-1732644710505",
+      "createdAt": "2024-12-04T05:59:00.833Z",
+      "updatedAt": "2024-12-04T05:59:00.834Z",
+      "status": "active"
+    },
+    {
+      "id": 1732424439205,
+      "name": "User Data",
+      "appToken": "no-token",
+      "slug": "userx",
+      "schema": [
+        {
+          "type": "text",
+          "name": "Name",
+          "value": "name"
+        }
+      ],
+      "createdAt": "2024-11-24T05:00:39.205Z",
+      "updatedAt": "2024-11-24T05:02:43.474Z",
+      "status": "DisActive"
+    }
+  ],
+  "data": [
+    {
+      "id": 1733294459351,
+      "name": "BANDGAR PRIYANKA VINOD",
+      "collection_slug": "userx",
+      "createdAt": "2024-12-04T06:40:59.351Z",
+      "updatedAt": "2024-12-04T06:40:59.351Z",
+      "status": "active"
+    },
+    {
+      "id": 1733292067509,
+      "username": "sanskar192007",
+      "Password": "sanskar19@",
+      "collection_slug": "user-informatuio-1732644710505",
+      "createdAt": "2024-12-04T06:01:07.509Z",
+      "updatedAt": "2024-12-04T06:01:07.509Z",
+      "status": "active"
+    },
+    {
+      "id": 1732688695448,
+      "username": "sanskar",
+      "password": "saksdm",
+      "email": "sanskar19@gmail.com",
+      "collection_slug": "user",
+      "createdAt": "2024-11-27T06:24:55.448Z",
+      "updatedAt": "2024-11-27T06:24:55.448Z",
+      "status": "active"
+    },
+    {
+      "id": 1732424791676,
+      "collection_slug": "userx",
+      "name": "sanskar",
+      "createdAt": "2024-11-24T05:06:31.676Z",
+      "updatedAt": "2024-11-24T05:06:31.676Z",
+      "status": "active"
+    }
+  ],
+  "media": [
+    {
+      "id": 3,
+      "createdAt": "2024-11-20T08:00:47.792Z",
+      "updatedAt": "2024-11-20T08:00:47.792Z",
+      "name": "1732089647790-name.png",
+      "originalName": "20221221_104024.png",
+      "type": "image/png",
+      "size": 187353,
+      "path": "/uploads/1732089647790-name.png",
+      "dimensions": {
+        "width": 3264,
+        "height": 3264
+      }
+    },
+    {
+      "id": 1732541751657,
+      "createdAt": "2024-11-25T13:35:51.657Z",
+      "updatedAt": "2024-11-25T13:35:51.657Z",
+      "name": "test-1732541751657.jpg",
+      "originalName": "WhatsApp Image 2024-11-24 at 22.28.35_8a5c7854.jpg",
+      "type": "image/jpeg",
+      "size": 34822,
+      "path": "/uploads/test-1732541751657.jpg",
+      "dimensions": {
+        "width": 719,
+        "height": 519
+      }
+    },
+    {
+      "id": 1732541775528,
+      "createdAt": "2024-11-25T13:36:15.528Z",
+      "updatedAt": "2024-11-25T13:36:15.528Z",
+      "name": "new testing-1732541775528.jpg",
+      "originalName": "WhatsApp Image 2024-11-24 at 15-new.29.49_48296f2a.jpg",
+      "type": "image/jpeg",
+      "size": 487475,
+      "path": "/uploads/new testing-1732541775528.jpg",
+      "dimensions": {
+        "width": 1024,
+        "height": 944
+      }
+    },
+    {
+      "id": 1732975390185,
+      "createdAt": "2024-11-30T14:03:10.185Z",
+      "updatedAt": "2024-11-30T14:03:10.185Z",
+      "name": "database-1732975390185.png",
+      "originalName": "3919812-middle.png",
+      "type": "image/png",
+      "size": 17580,
+      "path": "/uploads/database-1732975390185.png",
+      "dimensions": {
+        "width": 900,
+        "height": 590
+      }
+    },
+    {
+      "id": 1733292123603,
+      "createdAt": "2024-12-04T06:02:03.603Z",
+      "updatedAt": "2024-12-04T06:02:03.603Z",
+      "name": "stamp-1733292123602.png",
+      "originalName": "Screenshot_3-12-2024_02725_mystampready.com-removebg-preview.png",
+      "type": "image/png",
+      "size": 93090,
+      "path": "/uploads/stamp-1733292123602.png",
+      "dimensions": {
+        "width": 323,
+        "height": 321
+      }
+    }
+  ],
+  "client": [
+    {
+      "name": "sanskar",
+      "token": "1234"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "nextelectron",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3647",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.5",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.2.5",
+    "punycode": "^2.3.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0"
+  }
+}

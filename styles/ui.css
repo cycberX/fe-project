@@ -1,0 +1,397 @@
+/* styles/sidebar.css */
+
+/* Basic Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hide the sidebar off-screen */
+  height: 100%;
+  width: 15%;
+  background-color: var(--background);
+  color:var(--foreground);
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  left: 0; /* Move the sidebar into view when open */
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color:var(--foreground);
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  text-align: left;
+}
+
+.sidebar-menu li a {
+  color: var(--foreground);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-menu li a svg {
+  margin-right: 10px;
+}
+
+/* Sidebar Toggle Button (Hamburger) */
+.sidebar-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  color: var(--foreground);
+  
+  z-index: 1100; /* Make sure the button stays on top */
+}
+
+/* Default view for larger screens */
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0; /* Always show sidebar on larger screens */
+  }
+
+  .sidebar-toggle {
+    display: none; /* Hide the hamburger icon on larger screens */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    left: -250px; /* Keep the sidebar hidden on mobile */
+  }
+
+  .sidebar.open {
+    left: 0; /* Open sidebar when toggled on mobile */
+  }
+
+  .sidebar-toggle {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+/* Mobile - Extra small screens (less than 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .sidebar-header h2 {
+    font-size: 20px;
+  }
+
+  .sidebar-menu li {
+    padding: 10px;
+  }
+
+  .sidebar-menu li a svg {
+    font-size: 20px;
+  }
+}
+
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+}
+
+input,
+input:active,
+input:hover {
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  width: 100%;
+  background: var(--background);
+  border: none;
+  color: var(--foreground);
+  outline: none;
+}
+
+select {
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  background: var(--background);
+  border: none;
+  color: var(--foreground);
+}
+
+.input {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0rem 0.7rem;
+  margin: 5px;
+}
+.input > input {
+  border: none;
+}
+.input:focus {
+  border:none;
+}
+
+button,
+nutton:active,
+button:hover,
+.btn {
+  padding: 0.5rem 1rem;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  color: #3498db;
+  margin: 5px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  row-gap: 7px;
+}
+
+.card {
+  
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 7px;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.box:hover{
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card > span,
+.box > span {
+  font-size: 12px;
+}
+
+
+/* Container for the image */
+.image-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;  /* Optional border */
+}
+
+/* The image inside the container, which will auto fit */
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the box area */
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column dense;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.table-box {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.table {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+td {
+  font-weight: 600;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: inherit;
+  max-width: 300px;
+}
+
+.window {
+  padding: 1rem;
+  width: 70%;
+  position: relative;
+  top: 10%;
+  left: 15%;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.windows-container {
+  backdrop-filter: blur(5px);
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.window-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.7%;
+}
+
+.window-body {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* General Table Styles */
+/* .table-container {
+  width: 100%;
+  overflow-x: auto; 
+  margin-bottom: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.table th, .table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  font-weight: 500;
+  color: #757575;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Table Row Hover Effects */
+.table tr:hover {
+  background-color: #f0f0f0;
+} */
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid #6200ea;
+  color: #6200ea;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.pagination .page-info {
+  font-weight: bold;
+}
+
+/* Search Input Styles */
+.search-input {
+  padding: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 8px 12px;
+  }
+
+  .table-container {
+    overflow-x: scroll; /* Scrollable table on small screens */
+  }
+
+  /* Adjust Pagination for Mobile */
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pagination button {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 100%;
+  }
+}
