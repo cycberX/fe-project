@@ -88,10 +88,3 @@ export async function POST(request) {
     }, { status: 500 });
   }
 }
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-  maxDuration: 5,
-};
